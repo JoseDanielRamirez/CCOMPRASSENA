@@ -34,7 +34,7 @@
                 </td>
                 <td>
                     <form action="{{ url('dashboard/incomedetail/'.$incomedetail->id) }}" method="post">
-                        @method("DELETE ")
+                        @method("DELETE")
                         @csrf
                         <button class="bi bi-eraser-fill" type="submit"></button>
                     </form>

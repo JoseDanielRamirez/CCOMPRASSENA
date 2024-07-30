@@ -60,7 +60,8 @@ class IncomeDetailController extends Controller
     public function edit($id)
     {
         $incomedetail=IncomeDetail::find($id);
-        return view('dashboard.incomedetail.edit',['incomedetail'=>$incomedetail,'article'=>Article::all(),'income'=>Income::all()]);    }
+        return view('dashboard.incomedetail.edit',['incomedetail'=>$incomedetail,'article'=>Article::all(),'income'=>Income::all()]);
+    }
 
     /**
      * Update the specified resource in storage.
