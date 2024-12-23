@@ -16,7 +16,7 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
-                
+
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="url('dashboard/category')" :active="request()->routeIs('category')">
                         {{ __('Categoria') }}
@@ -50,6 +50,16 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="url('dashboard/saledetail')" :active="request()->routeIs('saledetail')">
                         {{ __('Detalle de Venta') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/role')" :active="request()->routeIs('role')">
+                        {{ __('Roles') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/usuario')" :active="request()->routeIs('usuario')">
+                        {{ __('Usuarios') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -12,6 +12,8 @@ use App\Http\Controllers\SaleController;
 use App\Http\Controllers\SaleDetailController;
 use App\Models\Article;
 use App\Models\IncomeDetail;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UsuarioController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,6 +34,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/incomedetail', IncomeDetailController::class);
     Route::resource('/dashboard/income', IncomeController::class);
     Route::resource('/dashboard/person', PersonController::class);
+    Route::resource('/dashboard/role', RoleController::class);
+    Route::resource('/dashboard/usuario', UsuarioController::class);
     Route::resource('/dashboard/saledetail', SaleDetailController::class);
     Route::resource('/dashboard/sale', SaleController::class);
 });
